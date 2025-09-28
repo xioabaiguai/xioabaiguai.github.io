@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2025-09-28T01:57:31.376Z</updated>
+  <updated>2025-09-28T02:04:51.332Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Beyond_Compare4_30天试用到期的解决办法</title>
+    <link href="http://example.com/2025/09/28/Beyond_Compare4_30%E5%A4%A9%E8%AF%95%E7%94%A8%E5%88%B0%E6%9C%9F%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/"/>
+    <id>http://example.com/2025/09/28/Beyond_Compare4_30%E5%A4%A9%E8%AF%95%E7%94%A8%E5%88%B0%E6%9C%9F%E7%9A%84%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95/</id>
+    <published>2025-09-28T02:01:25.612Z</published>
+    <updated>2025-09-28T02:04:51.332Z</updated>
+    
+    <content type="html"><![CDATA[<p>在搜索栏中（win+R 键）输入 regedit ，打开注册表</p><p><img src="https://xiaobaixiaoguai-image.oss-cn-guangzhou.aliyuncs.com/pAlNf6U.png" alt="1725988244991"></p><p>然后找到这个地址删除项目：\HKEY_CURRENT_USER\Software\ScooterSoftware\Beyond Compare 4\CacheId 的cacheid 右击删除掉就可以 然后重新打开下beyond compare</p><p><img src="https://xiaobaixiaoguai-image.oss-cn-guangzhou.aliyuncs.com/pAlNhXF.png" alt="1725988387613"></p>]]></content>
+    
+    
+    <summary type="html">Beyond_Compare4免费无限试用操作</summary>
+    
+    
+    
+    <category term="Beyond_Compare4" scheme="http://example.com/categories/Beyond-Compare4/"/>
+    
+    
+    <category term="教程" scheme="http://example.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>git中SSH密钥对生成路径修改</title>
+    <link href="http://example.com/2025/09/28/git%E4%B8%ADSSH%E5%AF%86%E9%92%A5%E5%AF%B9%E7%94%9F%E6%88%90%E8%B7%AF%E5%BE%84%E4%BF%AE%E6%94%B9/"/>
+    <id>http://example.com/2025/09/28/git%E4%B8%ADSSH%E5%AF%86%E9%92%A5%E5%AF%B9%E7%94%9F%E6%88%90%E8%B7%AF%E5%BE%84%E4%BF%AE%E6%94%B9/</id>
+    <published>2025-09-28T02:01:13.035Z</published>
+    <updated>2025-09-28T02:03:14.123Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="一、git中SSH密钥对生成路径修改"><a href="#一、git中SSH密钥对生成路径修改" class="headerlink" title="一、git中SSH密钥对生成路径修改"></a>一、git中SSH密钥对生成路径修改</h4><p>在安装git后配置ssh连接时，在生成密钥时会因自身系统名称为中文名字的原因，会出现提示找不到文件的报错，这时可以通过修改git生成密钥的地址进行解决</p><p>一、如果要修改默认的生成路径，具体操作如下：</p><ol><li><p>按住<strong>windows + R</strong>，调出运行窗口，然后输入<strong>sysdm.cpl</strong>，点击确定；</p></li><li><p>在弹出的系统属性对话框中，点击【<strong>高级</strong>】选项卡；</p></li><li><p>接着点击右下角的【<strong>环境变量</strong>】；</p><p><img src="C:\Users\hp\AppData\Roaming\Typora\typora-user-images\image-20250925110947794.png" alt="image-20250925110947794"></p></li></ol><p><strong>（如果没有找到HOME配置，可以进行手动新增，里面的地址可以自行设置）</strong></p><p>而我这里设置的是在D盘的etc文件下，然后我们去这到这个文件给他权限</p><p><img src="https://xiaobaixiaoguai-image.oss-cn-guangzhou.aliyuncs.com/pAlNxne.png" alt="img"></p><p>然后再进行执行</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;xioabaiguai&quot;</span><br><span class="line"></span><br><span class="line">git config --global user.email &quot;2189297099@qq.com&quot;</span><br><span class="line"></span><br><span class="line">ssh-keygen -t rsa -C &quot;2189297099@qq.com&quot;</span><br></pre></td></tr></table></figure><p>配置密钥到github上面自行百度配置流程</p><p><a href="https://blog.csdn.net/weixin_44406127/article/details/137540031">https://blog.csdn.net/weixin_44406127/article/details/137540031</a></p>]]></content>
+    
+    
+    <summary type="html">git密钥操作操作</summary>
+    
+    
+    
+    <category term="git" scheme="http://example.com/categories/git/"/>
+    
+    
+    <category term="教程" scheme="http://example.com/tags/%E6%95%99%E7%A8%8B/"/>
+    
+  </entry>
   
   <entry>
     <title>搭建博客</title>
